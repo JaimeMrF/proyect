@@ -32,3 +32,9 @@ console.log(`--------\nHello NodeJS\n--------\n`);
 
 // console.log(showUserInfo('Jaime', 18));
 // console.log(showUserInfo('Valeria', 16));
+
+// const showInfo = (user, age) => {
+//     return `user: ${user}\nage: ${age}`
+// };
+
+// console.log(showInfo('Jaime', 18));
