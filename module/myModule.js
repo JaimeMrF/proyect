@@ -1,4 +1,3 @@
-console.log(module)
 
 const myWebAddress = "google.com";
 const user = 'jaime';
@@ -9,15 +8,11 @@ const object = {
     descripcion: "xd"
 };
 
-const group = {
+module.exports =  {
     myWebAddress,
     user,
     array,
     mayor,
     object
-}
+};
 
-module.exports = group;
-
-
-console.log(module)
