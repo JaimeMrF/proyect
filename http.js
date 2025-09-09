@@ -1,6 +1,9 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-    res.write('hello world');
+    console.log(req.url);
+    res.write(`estás en ${req.url}`, 'utf-8');
     res.end();
-}).listen(5000)
+}).listen(3000);
+
+console.log("Servidor en el puerto 3000")
