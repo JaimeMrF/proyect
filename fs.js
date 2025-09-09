@@ -13,9 +13,26 @@ const fs = require('fs');
 // });
  
 fs.readFile('./data/first.txt', 'utf-8', (error, data) => {
-    if(error === null) {
-        console.log(data)
-    } else {
+    if(error) {
         console.log(error)
+    } else {
+        console.log(data)
     }
-})
+
+    fs.readFile('./data/second.txt', 'utf-8', (error, data) => {
+        if(error) {
+        console.log(error)
+    } else {
+        console.log(data)
+        }
+    })
+
+    fs.writeFile('./data/newfile.txt', 'archivo creado', (err, data)=> {
+        if (err) {
+            console.log(err)
+        } else {
+            console.log(data)
+        }
+    })
+})  
+
