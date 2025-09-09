@@ -1,3 +1,5 @@
+console.log(module)
+
 const myWebAddress = "google.com";
 const user = 'jaime';
 const array = [1,2,3];
@@ -18,3 +20,4 @@ const group = {
 module.exports = group;
 
 
+console.log(module)
