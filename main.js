@@ -1,2 +1,3 @@
-const web = require('./module/myModule');
-console.log(web)
+const {user, mayor} = require("./module/myModule");
+
+console.log(`${user} es ${mayor}`);
